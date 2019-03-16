@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=number],button {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Transfer</h3>
+
+<div class="container">
+  <form action="transfer.php" method="post">
+    <label for="seid">Enter the id of user who will send the credit points</label>
+    <input type="number" id="sid" name="se" placeholder="Sender Id">
+    <label for="reid">Enter the id of user who will receive the credit points</label>
+    <input type="number" id="rid" name="re" placeholder="Recievers Id"> 
+
+    <label for="amtpt">Enter the credit points to be transferred</label>
+    <input type="number" id="amt" name="pt" placeholder="Credit Point">
+
+    
+
+    <input type="submit" value="OK" name='new'>
+  </form>
+  <br>
+  <form action="index.html">
+    <input type="submit" value="Go to homepage" name="hello">
+  </form>
+  <br><br>
+</div>
+
+</body>
+</html>
